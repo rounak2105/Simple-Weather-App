@@ -1,0 +1,9 @@
+<body class="landing">
+	<input #boxin (keyup.enter)="cityName(boxin.value)" class="input" placeholder="Enter city name">
+	<div *ngIf="results">
+		<p class="but" (click)="changeUnits()">Change to {{current}}</p>
+		<br><br>
+		<p>Current temp : {{this.curTemp}}</p>
+		<p>Feels like : {{this.feels}}</p>
+	</div>
+</body>
